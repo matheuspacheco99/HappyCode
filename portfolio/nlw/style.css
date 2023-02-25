@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main {
+    max-width: 500px;
+    width: 90%;
+    margin: 32px auto;
+/*  display: flex;
+    flex-direction: column; muda a direção para colunas
+*/  display: grid;  
+    gap:24px;    
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2a2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #a1a1aa;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transforme .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+/*transform scale aumenta o tamanho do elemento no tamanho dentro dos ()
+  transition transform muda o tempo de transiçao */
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;    
+}
+/*
+#fotoGit {
+    border-radius: 100%;
+    width:15%;
+    display: block;
+    margin: 0px auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding: 4px;
+} esse foi oque eu fiz sozinho,abaixo foi o rocketseat
+*/
+header {
+    padding-top: 32px;
+    text-align: center;
+    height: 152px;
+}
+
+header div {
+    border-radius:50%;    
+    width:120px;
+    display: flex;
+    margin: auto;    
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);    
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1)
+}
+
+header img { 
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* animation */
+/* animation-delay: 1s; pode ser colocado ali em cima depois da duração de tempo */
+header div {
+    animation: fromTop .6s 2s backwards;
+}
+main section {
+    animation: fromBotton .6s backwards;
+}
+main section:nth-child(1) {
+    animation-delay: .1s;
+}
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }  
+    to {
+        opacity: 1;
+        transform: translate(0);      
+    }
+}
+@keyframes fromBotton {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }   
+    to {
+        opacity: 1;
+        transform: translate(0);       
+    }
+}
+

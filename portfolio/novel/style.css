@@ -1,0 +1,53 @@
+#SelecionarGenero {
+		color: black;
+		align-content: center;
+		margin: 0px 0px;
+		margin-bottom: -20px;
+	}
+#Status {
+		color: Black;
+		align-content: center;
+		margin: 0px 0px;
+		margin-right: -20px;
+		padding: -20px;
+	}
+
+#link {
+	text-decoration: none;
+	color: black;
+}
+
+#Extra{
+	color: black;
+}
+
+#Extra td{
+ 	color: black;
+}
+
+.NovelComSinopse{
+  position:relative;
+}
+
+.NovelSinopse{
+  display:none;
+  position:absolute; 
+  z-index:100;
+  border:2px;
+  background-color:white;
+  border-style:solid;
+  border-width:2px;
+  border-color:dimgray;
+  border-radius: 5px;
+  width:900px;
+  background-color:#f8f9fA;
+  padding: 5px; 
+}
+
+.NovelComSinopse:hover span.NovelSinopse{
+  display:block;
+}	
+
+#imagemCasa{
+	width:4%;
+}

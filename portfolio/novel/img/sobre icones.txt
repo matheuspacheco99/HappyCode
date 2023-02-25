@@ -1,0 +1,1 @@
+na navbar é melhor usar svg

@@ -1,0 +1,182 @@
+/* geral */
+#CorLetras {
+	color: #62D7FD;
+}
+#creditos {
+	width: 100%;
+	background-color: #1A1939;
+	color: #62D7FD;
+}
+#sobre,#habilidade,#portfolio,#contato{
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+.title {
+	color: #62D7FD;
+}
+body {
+	background-color: #2d2b68;
+}
+/* menu */
+.navbar {
+	background-color:#1A1939;
+	height: 5%;
+}
+.navbar a { 
+	color: #62D7FD;;
+}
+.navbar a:hover { 
+	color: black;
+	background-color: #62D7FD;
+	border-radius: 3px;
+}
+/* text hero image */
+.hero_titulo{
+	font-size: 4rem;
+	color: #62D7FD;
+}
+.hero_sub {
+	font-size: 1.5rem;
+}
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.bgimage {
+	height: 100vh;
+	background:url('img/heroImage.jpg');
+	background-size: cover;
+	position: relative;
+}
+.glass {
+	height: 44%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.9px);
+	-webkit-backdrop-filter: blur(4.9px);
+}
+/* Seção Sobre */
+#sobre #MudarCor {
+	color: white;
+}
+.ImagemSobre {
+	width: 100%;
+	border-radius: 5px;
+}
+
+/* habilidades ou Serviços */
+.servicesText.card{
+	height: 110px;
+	cursor: pointer;
+}
+.servicesIcon {
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+}
+.card-title {
+	text-align: center;
+}
+.card:hover .servicesIcon{
+	color: #62D7FD;
+}
+.servicesText:hover {
+	border: 1px solid #1A1939;
+}
+#habilidade .card {
+	color: #2d2b68;
+    font-size: 100%;
+    transition: all 0s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+	border: none;
+}
+#habilidade .card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+	color: #62D7FD;
+	font-size: 0%;
+}
+/* Portfolio */
+.btn {
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 0;
+    color: #62D7FD;
+}
+.btn-Gradient {
+    background-image: linear-gradient(to top left, #22aad8 0%, #201ac7 51%, #62D7FD 100%);
+  }
+.btn:hover {
+    background-position: right center;
+    color: #af7fee;
+}
+#portfolio .card {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+	width: 100%;
+	height: 100%;
+}
+#portfolio .card img {
+    width: 100%;
+	font-size: 100%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+	border: none;
+	color: #2d2b68;
+}
+#portfolio .card:hover {
+    border: 2px solid #22aad8;
+    color: #2d2b68;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+	transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+}
+
+/* contatos */
+.contactIcon{
+	font-size: 56px;
+	color: #62D7FD;
+}
+#redes .btn {
+    font-size: 100%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+	border: none;
+}
+#redes .btn:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.8);
+	border: none;
+}
+
+#contatos.card {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+#contatos.card img {
+    width: 100%;
+}
+#contatos.card2:hover {
+    border: 2px solid #22aad8;
+    color: #2d2b68;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+.contatosText.card2{
+	height: 160px; 
+	cursor: pointer;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#mapa {
+	border-radius: 5px;
+}
